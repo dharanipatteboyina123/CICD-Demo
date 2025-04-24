@@ -31,10 +31,10 @@
 				<extensions>true</extensions>
 				<configuration>
 				    <cloudHubDeployment>
-				        <muleVersion>${app.runtime}</muleVersion>
-                        <username>${username}</username>
-                        <password>${password}</password>
-                        <applicationName>CI-CD-Demo</applicationName>
+				        <muleVersion>4.0.0</muleVersion>
+                        <username>Dharani_Mdwhub</username>
+                        <password>Dharu@143job</password>
+                        <applicationName>CI-CD-Demooo</applicationName>
                         <environment>Sandbox</environment>
                         <region>us-east-2</region>
 					    <workers>1</workers>
