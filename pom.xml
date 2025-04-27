@@ -32,8 +32,8 @@
 				<configuration>
 				    <cloudHubDeployment>
 				        <muleVersion>4.0.0</muleVersion>
-                        <username>${PLATFORM_USERNAME}</username>
-                        <password>${PLATFORM_PASSWORD}</password>
+                        <username>Dharani_p</username>
+                        <password>Dharu@143job</password>
                         <applicationName>CI-CD-PrjctDemo</applicationName>
                         <environment>Sandbox</environment>
                         <region>us-east-2</region>
