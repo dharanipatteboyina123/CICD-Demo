@@ -31,7 +31,7 @@
 				<extensions>true</extensions>
 				<configuration>
 				    <cloudHubDeployment>
-				        <muleVersion>4.0.0</muleVersion>
+				        <muleVersion>4.4.0</muleVersion>
                         <username>Dharani_p</username>
                         <password>Dharu@143job</password>
                         <applicationName>CI-CD-PrjctDemo</applicationName>
