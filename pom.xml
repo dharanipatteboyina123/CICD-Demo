@@ -38,7 +38,6 @@
                         <username>${username}</username>
                         <password>${password}</password>
                         <environment>${environment}</environment>
-                        <region>${region}</region>
                         <application>
                             <name>${app.name}</name> <!-- Ensure app name is set -->
                             <workers>1</workers>
