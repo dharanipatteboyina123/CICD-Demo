@@ -40,8 +40,6 @@
                     <workers>1</workers> <!-- Number of workers -->
                     <objectStoreV2>true</objectStoreV2> <!-- Enable Object Store v2 -->
                     <persistentQueues>false</persistentQueues> <!-- Set true if needed -->
-                    <anypointPlatformClientId>${anypoint.client.id}</anypointPlatformClientId>
-                    <anypointPlatformClientSecret>${anypoint.client.secret}</anypointPlatformClientSecret>
                     <skipDeploymentVerification>false</skipDeploymentVerification>
                 </cloudHubDeployment>
             </configuration>
