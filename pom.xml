@@ -14,7 +14,8 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
         <app.runtime>4.9.3</app.runtime>
-        <mule.maven.plugin.version>${mavenversion}</mule.maven.plugin.version> <!-- Ensure version is set -->
+        <mule.maven.plugin.version>4.3.0</mule.maven.plugin.version> <!-- Specify Mule Maven Plugin version -->
+        <skipDeploymentVerification>false</skipDeploymentVerification> <!-- If skip deployment verification is needed -->
     </properties>
 
     <build>
@@ -34,19 +35,23 @@
                 <configuration>
                     <cloudhub2Deployment>
                         <uri>https://anypoint.mulesoft.com</uri>
-                        <muleVersion>4.9.3</muleVersion> <!-- Set mule version -->
-                        <username>${username}</username>
-                        <password>${password}</password>
-                        <environment>${environment}</environment>
-                        <application>
-                            <name>${app.name}</name> <!-- Ensure app name is set -->
-                            <workers>1</workers>
-                            <workerType>MICRO</workerType> <!-- Example worker type -->
-                            <properties>
-                                <anypoint.platform.client_id>${id}</anypoint.platform.client_id>
-                                <anypoint.platform.client_secret>${secret}</anypoint.platform.client_secret>
-                            </properties>
-                        </application>
+                        <provider>MC</provider>
+                        <environment>Sandbox</environment>
+                        <target>${reg}</target>
+                        <muleVersion>${app.runtime}</muleVersion> <!-- Mule runtime version -->
+                        <username>${username}</username> <!-- Define in settings.xml or in pom.xml -->
+                        <password>${password}</password> <!-- Define in settings.xml or in pom.xml -->
+                        <applicationName>${appname}</applicationName>
+                        <replicas>1</replicas>
+                        <vCores>0.1</vCores>
+                        <skipDeploymentVerification>${skipDeploymentVerification}</skipDeploymentVerification> <!-- Define in properties -->
+                        <integrations>
+                            <services>
+                                <objectStoreV2>
+                                    <enabled>true</enabled>
+                                </objectStoreV2>
+                            </services>
+                        </integrations>
                     </cloudhub2Deployment>
                 </configuration>
             </plugin>
