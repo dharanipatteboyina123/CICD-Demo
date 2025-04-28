@@ -91,6 +91,12 @@
             <url>https://repository.mulesoft.org/releases/</url>
             <layout>default</layout>
         </repository>
+        <repository>
+            <id>anypoint-exchange-v3</id>
+            <name>Exchange Repository</name>
+            <url>https://maven.anypoint.mulesoft.com/api/v3/organizations/f9d8b777-e0ed-486a-b675-bba427675563/maven</url>
+            <layout>default</layout>
+        </repository>
     </repositories>
 
     <pluginRepositories>
