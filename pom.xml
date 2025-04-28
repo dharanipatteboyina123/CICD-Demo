@@ -14,7 +14,7 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
 		<app.runtime>4.9.3</app.runtime>
-		<mule.maven.plugin.version>3.8.2</mule.maven.plugin.version>
+		<mule.maven.plugin.version>4.3.0</mule.maven.plugin.version>
 	</properties>
 
 	<build>
@@ -35,6 +35,10 @@
                     <password>${mule.password}</password>
                     <applicationName>${app.name}</applicationName>
                     <environment>${mule.env}</environment>
+                    <properties>
+                        <anypoint.platform.client_id>${id}</anypoint.platform.client_id>
+                        <anypoint.platform.client_secret>${secret}</anypoint.platform.client_secret>
+                    </properties>
                     <region>${region}</region> <!-- e.g., us-east-1 -->
                     <workerType>MICRO</workerType> <!-- MICRO, SMALL, MEDIUM, etc. -->
                     <workers>1</workers> <!-- Number of workers -->
