@@ -30,18 +30,21 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
-				    <cloudHubDeployment>
-				        <muleVersion>4.9.0</muleVersion>
-                        <username>Dharani_p</username>
-                        <password>Dharu@143job</password>
-                        <applicationName>CI-CD-PrjctDemo</applicationName>
-                        <environment>Sandbox</environment>
-                        <region>us-east-2</region>
-					    <workers>1</workers>
-					    <workerType>MICRO</workerType>
-					    <objectStoreV2>true</objectStoreV2>
-				    </cloudHubDeployment>
-				</configuration>
+                <cloudHubDeployment>
+                    <username>${mule.username}</username>
+                    <password>${mule.password}</password>
+                    <applicationName>${app.name}</applicationName>
+                    <environment>${mule.env}</environment>
+                    <region>${region}</region> <!-- e.g., us-east-1 -->
+                    <workerType>MICRO</workerType> <!-- MICRO, SMALL, MEDIUM, etc. -->
+                    <workers>1</workers> <!-- Number of workers -->
+                    <objectStoreV2>true</objectStoreV2> <!-- Enable Object Store v2 -->
+                    <persistentQueues>false</persistentQueues> <!-- Set true if needed -->
+                    <anypointPlatformClientId>${anypoint.client.id}</anypointPlatformClientId>
+                    <anypointPlatformClientSecret>${anypoint.client.secret}</anypointPlatformClientSecret>
+                    <skipDeploymentVerification>false</skipDeploymentVerification>
+                </cloudHubDeployment>
+            </configuration>
 			</plugin>
 		</plugins>
 	</build>
