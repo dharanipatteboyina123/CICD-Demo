@@ -18,7 +18,7 @@
         <skipDeploymentVerification>false</skipDeploymentVerification> <!-- skip deployment verification -->
         <username>${cloudhub.username}</username> <!-- Define in settings.xml or in pom.xml -->
         <password>${cloudhub.password}</password> <!-- Define in settings.xml or in pom.xml -->
-        <appname>ashish-demo-project-v1</appname> <!-- Mule application name -->
+        <appname>cicd-demoooooo</appname> <!-- Mule application name -->
         <reg>Cloudhub-US-East-2</reg> <!-- Target region (Cloudhub region) -->
     </properties>
 
