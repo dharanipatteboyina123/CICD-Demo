@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>f9d8b777-e0ed-486a-b675-bba427675563</groupId>
+    <groupId>230838e2-9eec-4815-96e0-f11d2e8b44e7</groupId>
     <artifactId>cicd-demo</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>mule-application</packaging>
@@ -82,7 +82,7 @@
         <repository>
             <id>anypoint-exchange-v3</id>
             <name>Anypoint Exchange</name>
-            <url>https://maven.anypoint.mulesoft.com/api/v3/maven</url>
+            <url>https://maven.anypoint.mulesoft.com/api/v2/maven</url>
             <layout>default</layout>
         </repository>
         <repository>
@@ -94,7 +94,7 @@
         <repository>
             <id>anypoint-exchange-v4</id>
             <name>Exchange Repository</name>
-            <url>https://maven.anypoint.mulesoft.com/api/v3/organizations/f9d8b777-e0ed-486a-b675-bba427675563/maven</url>
+            <url>https://maven.anypoint.mulesoft.com/api/v2/organizations/230838e2-9eec-4815-96e0-f11d2e8b44e7/maven</url>
             <layout>default</layout>
         </repository>
     </repositories>
@@ -114,7 +114,7 @@
         <repository>
             <id>anypoint-exchange</id>
             <name>Exchange Repository</name>
-            <url>https://maven.anypoint.mulesoft.com/api/v3/organizations/f9d8b777-e0ed-486a-b675-bba427675563/maven</url>
+            <url>https://maven.anypoint.mulesoft.com/api/v2/organizations/230838e2-9eec-4815-96e0-f11d2e8b44e7/maven</url>
             <layout>default</layout>
         </repository>
     </distributionManagement>
